@@ -2,8 +2,8 @@
 Travel Request Authorization
 
 Function yang telah berhasil
-insert user,
-update user,
-delete user,
-search by id,
-show all
+Insert user,
+Update user,
+Delete user,
+Search by id,
+Show all
