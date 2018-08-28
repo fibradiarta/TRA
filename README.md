@@ -1,7 +1,7 @@
 # TRA
 Travel Request Authorization
 
-Function yang telah di berhasil
+Function yang telah berhasil
 insert user,
 update user,
 delete user,
