@@ -11,13 +11,14 @@ namespace Bootcamp18_TRA_Codefirst.Models
     {
         [Key]
         public int transport_id { get; set; }
-        public int type_id { get; set; }
-        public int travel_id { get; set; }
         public string attachment { get; set; }
         public int cost { get; set; }
         public DateTime date { get; set; }
 
-        public virtual List<TYPE> Types { get; set; }
-        public virtual List<TRAVEL> Travels { get; set; }
+
+        public int type_id { get; set; }
+        public virtual TYPE Types { get; set; }
+        public int travel_id { get; set; }
+        public virtual TRAVEL Travels { get; set; }
     }
 }

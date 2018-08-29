@@ -13,5 +13,7 @@ namespace Bootcamp18_TRA_Codefirst.Models
         public int catagory_id { get; set; }
         public string name { get; set; }
         public string description { get; set; }
+
+        public virtual List<TRAVEL> Travels { get; set; }
     }
 }

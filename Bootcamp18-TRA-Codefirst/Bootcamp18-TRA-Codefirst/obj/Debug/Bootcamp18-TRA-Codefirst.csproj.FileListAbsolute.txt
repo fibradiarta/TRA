@@ -26,3 +26,17 @@ C:\Users\fibradiarta\Documents\TRA\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codef
 C:\Users\fibradiarta\Documents\TRA\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.exe
 C:\Users\fibradiarta\Documents\TRA\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.pdb
 C:\Users\fibradiarta\Documents\TRA\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.csprojAssemblyReference.cache
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\bin\Debug\Bootcamp18-TRA-Codefirst.exe.config
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\bin\Debug\Bootcamp18-TRA-Codefirst.exe
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\bin\Debug\Bootcamp18-TRA-Codefirst.pdb
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\bin\Debug\EntityFramework.dll
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\bin\Debug\EntityFramework.xml
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.csproj.CoreCompileInputs.cache
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.csproj.CopyComplete
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.exe
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.pdb
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.csprojResolveAssemblyReference.cache
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18_TRA_Codefirst.Migrations.InitialCreate.resources
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.csproj.GenerateResource.cache

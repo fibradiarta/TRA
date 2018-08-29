@@ -18,6 +18,6 @@ namespace Bootcamp18_TRA_Codefirst.Models
         public DateTime date_checkin { get; set; }
         public DateTime date_checkout { get; set; }
 
-        public virtual List<TRAVEL> Travels { get; set; }
+        public virtual TRAVEL Travels { get; set; }
     }
 }

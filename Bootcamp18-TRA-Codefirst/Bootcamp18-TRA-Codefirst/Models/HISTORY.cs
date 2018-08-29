@@ -15,6 +15,6 @@ namespace Bootcamp18_TRA_Codefirst.Models
         public string status { get; set; }
         public DateTime date_approval { get; set; }
 
-        public virtual List<TRAVEL> Travels { get; set; }
+        public virtual TRAVEL Travels { get; set; }
     }
 }

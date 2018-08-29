@@ -13,7 +13,7 @@ namespace Bootcamp18_TRA_Codefirst.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201808281345473_InitialCreate"; }
+            get { return "201808290325090_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

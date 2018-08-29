@@ -57,9 +57,9 @@
     <Compile Include="Controller\TravelController.cs" />
     <Compile Include="Controller\TypeController.cs" />
     <Compile Include="Controller\UserController.cs" />
-    <Compile Include="Migrations\201808281345473_InitialCreate.cs" />
-    <Compile Include="Migrations\201808281345473_InitialCreate.Designer.cs">
-      <DependentUpon>201808281345473_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201808290325090_InitialCreate.cs" />
+    <Compile Include="Migrations\201808290325090_InitialCreate.Designer.cs">
+      <DependentUpon>201808290325090_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\baseContext.cs" />
@@ -80,8 +80,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201808281345473_InitialCreate.resx">
-      <DependentUpon>201808281345473_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201808290325090_InitialCreate.resx">
+      <DependentUpon>201808290325090_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

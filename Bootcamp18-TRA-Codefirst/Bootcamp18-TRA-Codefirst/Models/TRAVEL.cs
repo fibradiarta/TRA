@@ -19,7 +19,11 @@ namespace Bootcamp18_TRA_Codefirst.Models
         public string status { get; set; }
         public int total { get; set; }
 
-        public virtual List<CATEGORY> Categories { get; set; }
-        public virtual List<USER> Users { get; set; }
+        public virtual List<TRANSPORT_COST> Transport_Costs { get; set; }
+        public virtual List<HOTEL_COST> Hotel_Costs { get; set; }
+        public virtual List<HISTORY> Histories { get; set; }
+
+        public virtual CATEGORY Categories { get; set; }
+        public virtual USER Users { get; set; }
     }
 }

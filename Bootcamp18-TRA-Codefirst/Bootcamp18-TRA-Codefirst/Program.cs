@@ -19,7 +19,8 @@ namespace Bootcamp18_TRA_Codefirst
                 Console.WriteLine("1. User");
                 Console.WriteLine("2. Role");
                 Console.WriteLine("3. Departments");
-                Console.WriteLine("4. Exit");
+                Console.WriteLine("4. Type");
+                Console.WriteLine("5. Exit");
                 Console.WriteLine("==================");
                 Console.Write("Pilih Action : ");
                 choice = Convert.ToInt32(System.Console.ReadLine());
@@ -37,12 +38,16 @@ namespace Bootcamp18_TRA_Codefirst
                         DepartmentController callDepartments = new DepartmentController();
                         callDepartments.Menu();
                         break;
+                    case 4:
+                        TypeController callType = new TypeController();
+                        callType.Menu();
+                        break;
                     default:
                         System.Console.Write("Exit Cuy!");
                         System.Console.Read();
                         break;
                 }
-            } while (choice != 4);
+            } while (choice != 5);
         }
     }
 }

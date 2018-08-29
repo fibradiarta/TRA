@@ -12,5 +12,7 @@ namespace Bootcamp18_TRA_Codefirst.Models
         [Key]
         public int type_id { get; set; }
         public string name { get; set; }
+
+        public virtual List<TRANSPORT_COST> Tranport_Costs { get; set; }
     }
 }

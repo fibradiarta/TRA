@@ -9,7 +9,7 @@ namespace Bootcamp18_TRA_Codefirst.Models
 {
     class baseContext : DbContext
     {
-        public baseContext() : base("Console.DBTRA") { }
+        public baseContext() : base("Console.DBTRA3") { }
 
         public DbSet<TRAVEL> Travels { get; set; }
         public DbSet<USER> Users { get; set; }

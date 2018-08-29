@@ -12,5 +12,7 @@ namespace Bootcamp18_TRA_Codefirst.Models
         [Key]
         public int role_id { get; set; }
         public string name { get; set; }
+
+        public virtual List<USER> Users { get; set; }
     }
 }

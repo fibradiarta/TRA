@@ -67,13 +67,15 @@ namespace Bootcamp18_TRA_Codefirst.Controller
             foreach (USER users in getAll)
             {
                 Console.WriteLine("-------------------------");
-                Console.WriteLine("Id : " + users.user_id);
-                Console.WriteLine("Name : " + users.name);
-                Console.WriteLine("Email : " + users.email);
-                Console.WriteLine("Job Title : " + users.job_title);
-                Console.WriteLine("Gender : " + users.gender);
-                Console.WriteLine("Birth Date : " + users.birth_date);
-                Console.WriteLine("Password : " + users.password);
+                Console.WriteLine("Id           : " + users.user_id);
+                Console.WriteLine("Name         : " + users.name);
+                Console.WriteLine("Email        : " + users.email);
+                Console.WriteLine("Job Title    : " + users.job_title);
+                Console.WriteLine("Gender       : " + users.gender);
+                Console.WriteLine("Birth Date   : " + users.birth_date);
+                Console.WriteLine("Password     : " + users.password);
+                Console.WriteLine("Department   : " + users.department_id);
+                Console.WriteLine("Role         : " + users.role_id);
                 Console.WriteLine("-------------------------");
             }
 
@@ -84,7 +86,7 @@ namespace Bootcamp18_TRA_Codefirst.Controller
         {
             string nama, email, jobtitle, jenis_kelamin, password;
             DateTime tanggal_lahir;
-            //int id_dept, id_rol;
+            int id_dept, id_rol;
             // inputan by user
             Console.Write("Masukkan Nama Lengkap    : ");
             nama = Console.ReadLine();
@@ -98,10 +100,10 @@ namespace Bootcamp18_TRA_Codefirst.Controller
             tanggal_lahir = Convert.ToDateTime(Console.ReadLine());
             Console.Write("Masukkan Password        : ");
             password = Console.ReadLine();
-            /*Console.Write("Masukkan Department ID : ");
+            Console.Write("Masukkan Department ID   : ");
             id_dept = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Masukkan Role ID : ");
-            id_rol = Convert.ToInt32(Console.ReadLine());*/
+            Console.Write("Masukkan Role ID         : ");
+            id_rol = Convert.ToInt32(Console.ReadLine());
 
             // proses save ke database
 
@@ -113,9 +115,9 @@ namespace Bootcamp18_TRA_Codefirst.Controller
                 job_title = jobtitle,
                 gender = jenis_kelamin,
                 birth_date = tanggal_lahir,
-                password = password
-                //department_id = id_dept,
-                //role_id = id_rol
+                password = password,
+                department_id = id_dept,
+                role_id = id_rol
                 
             };
             try
@@ -137,7 +139,7 @@ namespace Bootcamp18_TRA_Codefirst.Controller
             if (uSER == null)
             {
                 Console.Write("Id " + input + " Tidak Ada");
-                Console.Read();
+                
             }
             return uSER;
         }
@@ -148,7 +150,7 @@ namespace Bootcamp18_TRA_Codefirst.Controller
             if (users == null)
             {
                 Console.Write("Id " + input + " Tidak Ada");
-                Console.Read();
+                
             }
             else
             {
@@ -160,6 +162,8 @@ namespace Bootcamp18_TRA_Codefirst.Controller
                 Console.WriteLine("Gender : " + users.gender);
                 Console.WriteLine("Birth Date : " + users.birth_date);
                 Console.WriteLine("Password : " + users.password);
+                Console.WriteLine("Department   : " + users.department_id);
+                Console.WriteLine("Role         : " + users.role_id);
                 Console.WriteLine("-------------------------");
             }
             return users;
@@ -172,55 +176,67 @@ namespace Bootcamp18_TRA_Codefirst.Controller
             //int id_dept, id_rol;
             // inputan by user
             var users = context.Users.Find(input);
+            if (users == null)
+            {
+                Console.Write("User dengan ID " + input + " tidak tersedia");
+            }
+            else
+            {
+                Console.WriteLine("--------Data Sebelum di Update---------");
+                Console.WriteLine("Id           : " + users.user_id);
+                Console.WriteLine("Name         : " + users.name);
+                Console.WriteLine("Email        : " + users.email);
+                Console.WriteLine("Job Title    : " + users.job_title);
+                Console.WriteLine("Gender       : " + users.gender);
+                Console.WriteLine("Birth Date   : " + users.birth_date);
+                Console.WriteLine("Password     : " + users.password);
+                Console.WriteLine("Department   : " + users.department_id);
+                Console.WriteLine("Role         : " + users.role_id);
+                Console.WriteLine("-------------------------\n");
 
-            Console.WriteLine("--------Data Sebelum di Update---------");
-            Console.WriteLine("Id           : " + users.user_id);
-            Console.WriteLine("Name         : " + users.name);
-            Console.WriteLine("Email        : " + users.email);
-            Console.WriteLine("Job Title    : " + users.job_title);
-            Console.WriteLine("Gender       : " + users.gender);
-            Console.WriteLine("Birth Date   : " + users.birth_date);
-            Console.WriteLine("Password     : " + users.password);
-            Console.WriteLine("-------------------------\n");
+                Console.Write("Masukkan Nama Lengkap    : ");
+                nama = Console.ReadLine();
+                Console.Write("Masukkan Email           : ");
+                email = Console.ReadLine();
+                Console.Write("Masukkan Job Title       : ");
+                jobtitle = Console.ReadLine();
+                Console.Write("Masukkan Gender          : ");
+                jenis_kelamin = Console.ReadLine();
+                Console.Write("Masukkan Birth Date      : ");
+                tanggal_lahir = Convert.ToDateTime(Console.ReadLine());
+                Console.Write("Masukkan Password        : ");
+                password = Console.ReadLine();
+                /*Console.Write("Masukkan Department ID : ");
+                id_dept = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Masukkan Role ID : ");
+                id_rol = Convert.ToInt32(Console.ReadLine());*/
 
-            Console.Write("Masukkan Nama Lengkap    : ");
-            nama = Console.ReadLine();
-            Console.Write("Masukkan Email           : ");
-            email = Console.ReadLine();
-            Console.Write("Masukkan Job Title       : ");
-            jobtitle = Console.ReadLine();
-            Console.Write("Masukkan Gender          : ");
-            jenis_kelamin = Console.ReadLine();
-            Console.Write("Masukkan Birth Date      : ");
-            tanggal_lahir = Convert.ToDateTime(Console.ReadLine());
-            Console.Write("Masukkan Password        : ");
-            password = Console.ReadLine();
-            /*Console.Write("Masukkan Department ID : ");
-            id_dept = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Masukkan Role ID : ");
-            id_rol = Convert.ToInt32(Console.ReadLine());*/
 
-           
-            USER uSER = GetById(input);
-            uSER.name = nama;
-            uSER.email = email;
-            uSER.job_title = jobtitle;
-            uSER.gender = jenis_kelamin;
-            uSER.birth_date = tanggal_lahir;
-            uSER.password = password;
+                USER uSER = GetById(input);
+                uSER.name = nama;
+                uSER.email = email;
+                uSER.job_title = jobtitle;
+                uSER.gender = jenis_kelamin;
+                uSER.birth_date = tanggal_lahir;
+                uSER.password = password;
 
-            context.Entry(uSER).State = System.Data.Entity.EntityState.Modified;
-            context.SaveChanges();
+                context.Entry(uSER).State = System.Data.Entity.EntityState.Modified;
+                context.SaveChanges();
 
-            Console.WriteLine("\n--------Data Sesudah di Update---------");
-            Console.WriteLine("Id           : " + users.user_id);
-            Console.WriteLine("Name         : " + users.name);
-            Console.WriteLine("Email        : " + users.email);
-            Console.WriteLine("Job Title    : " + users.job_title);
-            Console.WriteLine("Gender       : " + users.gender);
-            Console.WriteLine("Birth Date   : " + users.birth_date);
-            Console.WriteLine("Password     : " + users.password);
-            Console.WriteLine("-------------------------");
+                Console.WriteLine("\n--------Data Sesudah di Update---------");
+                Console.WriteLine("Id           : " + users.user_id);
+                Console.WriteLine("Name         : " + users.name);
+                Console.WriteLine("Email        : " + users.email);
+                Console.WriteLine("Job Title    : " + users.job_title);
+                Console.WriteLine("Gender       : " + users.gender);
+                Console.WriteLine("Birth Date   : " + users.birth_date);
+                Console.WriteLine("Password     : " + users.password);
+                Console.WriteLine("Department   : " + users.department_id);
+                Console.WriteLine("Role         : " + users.role_id);
+                Console.WriteLine("-------------------------");
+            }
+
+            
 
             return input;
         }
