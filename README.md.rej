@@ -1,0 +1,12 @@
+diff a/README.md b/README.md	(rejected hunks)
+@@ -1,9 +0,2 @@
+-# TRA
++# Travel Request Authorization
+ Travel Request Authorization
+-
+-Function yang telah berhasil
+-Insert user,
+-Update user,
+-Delete user,
+-Search by id,
+-Show all
