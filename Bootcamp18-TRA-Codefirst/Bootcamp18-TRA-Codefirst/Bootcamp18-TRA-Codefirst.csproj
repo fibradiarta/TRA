@@ -48,6 +48,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\CategoryController.cs" />
+    <Compile Include="Controller\DepartmentController.cs" />
+    <Compile Include="Controller\HistoryController.cs" />
+    <Compile Include="Controller\HotelCostController.cs" />
+    <Compile Include="Controller\RoleController.cs" />
+    <Compile Include="Controller\TransportController.cs" />
+    <Compile Include="Controller\TravelController.cs" />
+    <Compile Include="Controller\TypeController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Migrations\201808281345473_InitialCreate.cs" />
     <Compile Include="Migrations\201808281345473_InitialCreate.Designer.cs">
