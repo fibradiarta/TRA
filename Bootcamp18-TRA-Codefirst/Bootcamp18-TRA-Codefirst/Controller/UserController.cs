@@ -63,7 +63,13 @@ namespace Bootcamp18_TRA_Codefirst.Controller
 
         public List<USER> getAll()
         {
-            var getAll = context.Users.ToList();
+            //var getAll = context.Users.ToList();
+
+            var getAll = from u in context.Users.ToList() join d in context.Departments.ToList()
+                         on u.department_id equals d.department_id join r in context.Roles.ToList() 
+                         on u.role_id equals r.role_id
+                         select u;
+
             foreach (USER users in getAll)
             {
                 Console.WriteLine("-------------------------");
@@ -74,12 +80,12 @@ namespace Bootcamp18_TRA_Codefirst.Controller
                 Console.WriteLine("Gender       : " + users.gender);
                 Console.WriteLine("Birth Date   : " + users.birth_date);
                 Console.WriteLine("Password     : " + users.password);
-                Console.WriteLine("Department   : " + users.department_id);
-                Console.WriteLine("Role         : " + users.role_id);
+                Console.WriteLine("Department   : " + users.Departments.name);
+                Console.WriteLine("Role         : " + users.Roles.name);
                 Console.WriteLine("-------------------------");
             }
 
-            return getAll;
+            return getAll.ToList();
         }
 
         public void Insert()

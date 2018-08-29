@@ -20,7 +20,9 @@ namespace Bootcamp18_TRA_Codefirst
                 Console.WriteLine("2. Role");
                 Console.WriteLine("3. Departments");
                 Console.WriteLine("4. Type");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Category");
+                Console.WriteLine("6. Travel");
+                Console.WriteLine("7. Exit");
                 Console.WriteLine("==================");
                 Console.Write("Pilih Action : ");
                 choice = Convert.ToInt32(System.Console.ReadLine());
@@ -42,12 +44,20 @@ namespace Bootcamp18_TRA_Codefirst
                         TypeController callType = new TypeController();
                         callType.Menu();
                         break;
+                    case 5:
+                        CategoryController callCategory = new CategoryController();
+                        callCategory.Menu();
+                        break;
+                    case 6:
+                        TravelController callTravel = new TravelController();
+                        callTravel.Menu();
+                        break;
                     default:
                         System.Console.Write("Exit Cuy!");
                         System.Console.Read();
                         break;
                 }
-            } while (choice != 5);
+            } while (choice != 7);
         }
     }
 }

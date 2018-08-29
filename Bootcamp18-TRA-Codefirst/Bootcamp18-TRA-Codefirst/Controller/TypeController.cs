@@ -141,7 +141,7 @@ namespace Bootcamp18_TRA_Codefirst.Controller
             Console.WriteLine("Name Type        : " + types.name);
             Console.WriteLine("-------------------------------------\n");
 
-            Console.Write("Masukan Nama Department : ");
+            Console.Write("Masukan Nama Type : ");
             nama = Console.ReadLine();
 
             TYPE tYPE = GetById(input);
