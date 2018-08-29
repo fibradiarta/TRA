@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Controller\CategoryController.cs" />
     <Compile Include="Controller\DepartmentController.cs" />
+    <Compile Include="Controller\FunctionHistory.cs" />
     <Compile Include="Controller\HistoryController.cs" />
     <Compile Include="Controller\HotelCostController.cs" />
     <Compile Include="Controller\RoleController.cs" />

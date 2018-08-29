@@ -13,6 +13,7 @@ namespace Bootcamp18_TRA_Codefirst.Controller
 
         public void Menu()
         {
+            
             int pilihan, input;
             do
             {

@@ -61,6 +61,12 @@ namespace Bootcamp18_TRA_Codefirst.Controller
             } while (pilihan != 6);
         }
 
+        /**
+         * fuct
+         * @param 
+         * @return
+        **/
+
         public List<USER> getAll()
         {
             //var getAll = context.Users.ToList();
