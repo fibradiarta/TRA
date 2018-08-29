@@ -22,7 +22,9 @@ namespace Bootcamp18_TRA_Codefirst
                 Console.WriteLine("4. Type");
                 Console.WriteLine("5. Category");
                 Console.WriteLine("6. Travel");
-                Console.WriteLine("7. Exit");
+                Console.WriteLine("7. Hotel Cost");
+                Console.WriteLine("8. Transport Cost");
+                Console.WriteLine("9. Exit");
                 Console.WriteLine("==================");
                 Console.Write("Pilih Action : ");
                 choice = Convert.ToInt32(System.Console.ReadLine());
@@ -52,12 +54,20 @@ namespace Bootcamp18_TRA_Codefirst
                         TravelController callTravel = new TravelController();
                         callTravel.Menu();
                         break;
+                    case 7:
+                        HotelCostController callHotelCost = new HotelCostController();
+                        callHotelCost.Menu();
+                        break;
+                    case 8:
+                        TransportController callTransprotCost = new TransportController();
+                        callTransprotCost.Menu();
+                        break;
                     default:
                         System.Console.Write("Exit Cuy!");
                         System.Console.Read();
                         break;
                 }
-            } while (choice != 7);
+            } while (choice != 9);
         }
     }
 }

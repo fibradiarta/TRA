@@ -152,7 +152,15 @@ namespace Bootcamp18_TRA_Codefirst.Controller
 
         public USER GetById2(int input)
         {
+            /*var temp = from u in context.Users.ToList()
+                         join d in context.Departments.ToList()
+                         on u.department_id equals d.department_id
+                         join r in context.Roles.ToList()
+                         on u.role_id equals r.role_id
+                         select u;*/
+
             USER users = context.Users.Find(input);
+
             if (users == null)
             {
                 Console.Write("Id " + input + " Tidak Ada");
@@ -161,15 +169,15 @@ namespace Bootcamp18_TRA_Codefirst.Controller
             else
             {
                 Console.WriteLine("-------------------------");
-                Console.WriteLine("Id : " + users.user_id);
-                Console.WriteLine("Name : " + users.name);
-                Console.WriteLine("Email : " + users.email);
-                Console.WriteLine("Job Title : " + users.job_title);
-                Console.WriteLine("Gender : " + users.gender);
-                Console.WriteLine("Birth Date : " + users.birth_date);
-                Console.WriteLine("Password : " + users.password);
-                Console.WriteLine("Department   : " + users.department_id);
-                Console.WriteLine("Role         : " + users.role_id);
+                Console.WriteLine("Id           : " + users.user_id);
+                Console.WriteLine("Name         : " + users.name);
+                Console.WriteLine("Email        : " + users.email);
+                Console.WriteLine("Job Title    : " + users.job_title);
+                Console.WriteLine("Gender       : " + users.gender);
+                Console.WriteLine("Birth Date   : " + users.birth_date);
+                Console.WriteLine("Password     : " + users.password);
+                Console.WriteLine("Department   : " + users.Departments.name);
+                Console.WriteLine("Role         : " + users.Roles.name);
                 Console.WriteLine("-------------------------");
             }
             return users;
@@ -181,6 +189,13 @@ namespace Bootcamp18_TRA_Codefirst.Controller
             DateTime tanggal_lahir;
             //int id_dept, id_rol;
             // inputan by user
+            var getAll = from u in context.Users.ToList()
+                         join d in context.Departments.ToList()
+                         on u.department_id equals d.department_id
+                         join r in context.Roles.ToList()
+                         on u.role_id equals r.role_id
+                         select u;
+
             var users = context.Users.Find(input);
             if (users == null)
             {
@@ -196,8 +211,8 @@ namespace Bootcamp18_TRA_Codefirst.Controller
                 Console.WriteLine("Gender       : " + users.gender);
                 Console.WriteLine("Birth Date   : " + users.birth_date);
                 Console.WriteLine("Password     : " + users.password);
-                Console.WriteLine("Department   : " + users.department_id);
-                Console.WriteLine("Role         : " + users.role_id);
+                Console.WriteLine("Department   : " + users.Departments.name);
+                Console.WriteLine("Role         : " + users.Roles.name);
                 Console.WriteLine("-------------------------\n");
 
                 Console.Write("Masukkan Nama Lengkap    : ");
