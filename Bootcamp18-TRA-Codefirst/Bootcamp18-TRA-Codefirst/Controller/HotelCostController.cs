@@ -173,7 +173,7 @@ namespace Bootcamp18_TRA_Codefirst.Controller
         {
             string nama, attachment;
             DateTime dateCheckin, dateCheckout;
-            int harga, travel;
+            int harga;
 
             var temp = from h in context.Hotel_Costs.ToList()
                        join t in context.Travels.ToList()

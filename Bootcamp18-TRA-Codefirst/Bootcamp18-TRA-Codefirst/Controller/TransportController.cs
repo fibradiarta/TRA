@@ -175,7 +175,7 @@ namespace Bootcamp18_TRA_Codefirst.Controller
         {
             string attachment;
             DateTime date;
-            int harga, travel, types;
+            int harga, types;
             // inputan by user
 
             var temp = from tc in context.Transport_Costs.ToList()

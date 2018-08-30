@@ -39,4 +39,4 @@ C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18
 C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.csproj.CopyComplete
 C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.exe
 C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.pdb
-C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.csprojResolveAssemblyReference.cache
+C:\Users\fibradiarta\Documents\TRA-Codefirst\Bootcamp18-TRA-Codefirst\Bootcamp18-TRA-Codefirst\obj\Debug\Bootcamp18-TRA-Codefirst.csprojAssemblyReference.cache
